@@ -18,18 +18,61 @@ body {
     section {
         min-height: 300px;
 
-        .wraper-answers, .wraper-users {
-         
-        }
+        .content {
+            padding-top: 20px;
 
-        .wraper-answers {
-            float: left;
-            width: 40%;
-        }
+            .wrapper-answers {
+                float: left;
+                width: 45%;
+                // background: rgba(255,255,255,.1);
 
-        .wraper-users {
-            float: right;
-            width: 40%;
+                .answers {
+                    margin: 0;
+                    padding: 30px;
+                    padding-left: 40px;
+                    color: #fff;
+                    -webkit-transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
+                    transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
+
+                    li {
+                        margin-top: 20px;
+                        padding: 20px;
+                        background: #172435;
+                        #gradient .vertical(#192648, #000D10);
+                        border: 3px solid white;
+                        border-radius: 3px;
+                        box-shadow: -10px -10px 10px rgba(0,0,0,.4);      
+
+                        &.blue {
+                            // background: blue;
+                            border-color: #4F64E4;
+                            margin: 0;
+                        }
+
+                        &.orange {
+                            // background: orange;
+                            border-color: #edaf3d;
+                        }
+
+                        &.green {
+                            // background: green;
+                            border-color: #49DF3F;
+                        }
+
+                        &.yellow {
+                            // background: yellow;
+                            border-color: #F6F84D;
+                        }                                                            
+
+                    }
+                }
+            }
+
+            .wrapper-users {
+                float: right;
+                width: 40%;
+                background: rgba(255,255,255,.1);                
+            }
         }
     }
 
