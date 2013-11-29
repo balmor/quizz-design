@@ -81,3 +81,23 @@ fsButton.addEventListener('click', function() {
 }, true);
 
 }
+
+
+$(function(){
+    var time = 30,
+        timeLeft = $(".time-left"),
+        timerContainer = $(".timer-container");
+
+    setInterval(function(){
+        if(time > 20 ) {
+            timerContainer.addClass("planty");
+        } else if (time > 10) {
+            timerContainer.addClass("midd");
+        } else {
+            timerContainer.addClass("low");
+        }
+        time = time - 1;
+        timeLeft.text(time);
+    }, 1000);
+
+});
