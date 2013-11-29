@@ -84,20 +84,28 @@ fsButton.addEventListener('click', function() {
 
 
 $(function(){
-    var time = 30,
+    var time = 31,
         timeLeft = $(".time-left"),
-        timerContainer = $(".timer-container");
+        timerContainer = $(".timer-container")
+        licznik = setInterval(function(){
+            if(time > 20 ) {
+                timerContainer.addClass("planty");
+            } else if (time > 10) {
+                timerContainer.addClass("midd");
+            } else {
+                timerContainer.addClass("low");
+            }
 
-    setInterval(function(){
-        if(time > 20 ) {
-            timerContainer.addClass("planty");
-        } else if (time > 10) {
-            timerContainer.addClass("midd");
-        } else {
-            timerContainer.addClass("low");
-        }
-        time = time - 1;
-        timeLeft.text(time);
-    }, 1000);
+            time = time - 1;
+            timeLeft.text(time);
+
+            if(time <= 0) {
+                clearInterval(licznik);
+                timerContainer.removeClass("low");
+                timerContainer.removeClass("midd");
+                timeLeft.text("Time's Up");
+            }
+        }, 1000);
+
 
 });

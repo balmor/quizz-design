@@ -46,7 +46,7 @@
                 <div class="time-left"></div>
             </div>
 
-            <div class="spacer-v-3"></div>
+            <div class="spacer-v-2"></div>
 
             <div class="content">
                 <div class="wrapper-answers">
@@ -117,6 +117,7 @@
 
     <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="//code.jquery.com/ui/1.9.0/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
 
 
 
