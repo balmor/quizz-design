@@ -27,15 +27,14 @@
 </head>
 <body id="game-wrap">
     <div class="container">
-        <!-- <img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=100" alt=""> -->
         <header>
                 <h1>Quizz</h1>
         </header>
         <section>
-            <div class="person normal">
+            <div class="person normal active">
                 <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=200" alt=""></div>
             </div>
-            <div class="person normal">
+            <div class="person normal chosen">
                 <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=200" alt=""></div>
             </div>
              <div class="person normal">
@@ -129,13 +128,13 @@
 
         <section>
             <div class="person mini">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=100" alt=""></div>
+                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=40" alt=""></div>
             </div>
             <div class="person mini">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=100" alt=""></div>
+                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=40" alt=""></div>
             </div>
              <div class="person mini">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=100" alt=""></div>
+                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=40" alt=""></div>
             </div>
              <div class="person mini empty">
                 <div class="image"></div>

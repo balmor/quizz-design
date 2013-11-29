@@ -6,25 +6,12 @@
 
 body {
     section {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        // Flexbox
-        -moz-display: flex;
-        -moz-flex-direction: column;
-        -moz-flex-wrap: wrap;
-        -webkit-display: flex;
-        -webkit-flex-direction: column;
-        -webkit-flex-wrap: wrap;
         .person {
             background: rgba(0,0,0,.4);
             padding: 10px;
             .box-shadow(0 0 10px 0 rgba(36, 83, 175, .9));
             display: inline-block;
             margin: 20px;
-            // Flexbox
-            // -moz-flex: 220px 1;
-            // -webkit-flex: 220px 1;
             .image {
                 text-align: center;
                 img {
@@ -66,9 +53,52 @@ body {
                     background-size: 70px 70px !important;
                 }
             }
-            &.mini {
+            &.active {
+                .box-shadow(0 0 30px 0 rgba(237, 175, 61, .6));
+                border: 2px solid rgb(237, 175, 61);
+                -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
+                -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
+                -ms-animation: 1600ms pulsate infinite alternate ease-in-out;
+                -o-animation: 1600ms pulsate infinite alternate ease-in-out;
+                animation: 1600ms pulsate infinite alternate ease-in-out;
                 
             }
+            &.chosen {
+                .box-shadow(0 0 30px 0 rgba(73, 223, 63, .6));
+                border: 2px solid rgb(73, 223, 63);
+                .image {
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        border-color: rgb(73, 223, 63);
+                        border-style: solid;
+                        border-width: 0 15px 15px 0;
+                        height: 80px;
+                        left: 40%;
+                        top: 30%;
+                        margin-top: -11px;
+                        transform: rotate(45deg);
+                        width: 40px;
+                    }
+                    img {
+                        .opacity(0.2);
+                    }
+                }
+            }   
+            &.mini {
+                padding: 5px;
+                .square(50px);
+                .image {
+                    .square(30px);
+                    background-size: 30px 30px !important;
+                }
+                &.empty {
+                    .image {
+                        .square(40px);
+                    }
+                }
+        }
             &.empty {
                 .image {
                     background: url(../img/question-mark-icon.png) center center no-repeat;
