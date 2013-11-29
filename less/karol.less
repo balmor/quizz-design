@@ -21,7 +21,7 @@ body {
 
     
     .container {
-        background: rgba(255,255,255,1);
+        // background: rgba(255,255,255,.1);
 
         &.em-based {
             position: relative;
@@ -76,9 +76,86 @@ body {
                 bottom: 0;
                 background: #2be;
             }
+
+            .question-container {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                float: left;
+                .size(88em,16em);
+                background: #222;
+                display: table;
+                border: .2em solid #555;
+                border-radius: 2em 0 0 2em;
+                box-shadow: inset 0 0 0em .15em rgba(255,255,255,.2);
+
+                .question {
+                    .text {
+                        font-size: 1.4em;
+                        
+                    }
+                    padding: 0 10em 0 2em;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+
+            .timer-container {
+                display: table;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                float: left;
+                .size(16em,16em);
+                background: #FFF;
+                border-radius: 50%;
+
+                margin-left: -8em;
+
+                &.planty {
+                    -webkit-animation: 4s timer-planty infinite alternate ease-in-out;
+                    -moz-animation: 4s timer-planty infinite alternate ease-in-out;
+                    -ms-animation: 4s timer-planty infinite alternate ease-in-out;
+                    -o-animation: 4s timer-planty infinite alternate ease-in-out;
+                    animation: 4s timer-planty infinite alternate ease-in-out;
+                    .time-left { color: #00EB2F; }
+                }
+
+                &.midd {
+                    -webkit-animation: 2s timer-midd infinite alternate ease-in-out;
+                    -moz-animation: 2s timer-midd infinite alternate ease-in-out;
+                    -ms-animation: 2s timer-midd infinite alternate ease-in-out;
+                    -o-animation: 2s timer-midd infinite alternate ease-in-out;
+                    animation: 2s timer-midd infinite alternate ease-in-out;
+                    .time-left { color: #EBC000; }
+                }
+
+                &.low {
+                    -webkit-animation: 1s timer-low infinite alternate ease-in-out;
+                    -moz-animation: 1s timer-low infinite alternate ease-in-out;
+                    -ms-animation: 1s timer-low infinite alternate ease-in-out;
+                    -o-animation: 1s timer-low infinite alternate ease-in-out;
+                    animation: 1s timer-low infinite alternate ease-in-out;
+                        .time-left { color: #FF7A66; 
+                            -webkit-animation: 1s timer-text-low infinite alternate ease-in-out;
+                            -moz-animation: 1s timer-text-low infinite alternate ease-in-out;
+                            -ms-animation: 1s timer-text-low infinite alternate ease-in-out;
+                            -o-animation: 1s timer-text-low infinite alternate ease-in-out;
+                            animation: 1s timer-text-low infinite alternate ease-in-out;
+
+                    }
+                }
+                
+                .time-left {
+                    font-size: 3em;
+                    color: #444;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
         }
     }
-}
+} // BODY end
 
 // MISC
 
@@ -110,4 +187,98 @@ body {
     left: .75em;
     position: absolute;
     width: 1.5em;
+}
+
+// HELPER CLASSES
+
+.spacer-v-1 {
+    .space-v;
+}
+
+.spacer-v-2 {
+    .space-v(2em);
+}
+
+.spacer-v-3 {
+    .space-v(3em);
+}
+
+.space-v(@y: 1em) {
+    width: 100%;
+    display: inline-block;
+    height: @y;
+}
+
+@-moz-keyframes timer-low
+{
+0%   {box-shadow: 0 0 0px #FF7A66;}
+25%  {box-shadow: 0 0 .625em #FF7A66, 0 0 .45em #FF7A66;}
+50%  {box-shadow: 0 0 25px #FF7A66, 0 0 .45em #FF7A66,0 0 15px #FF7A66, 0 0 2.5em #FF7A66}
+75%  {box-shadow: 0 0 .625em #FF7A66, 0 0 .3125em #FF7A66;}
+100%  {box-shadow: 0 0 .625em #FF7A66;}
+}
+
+@-webkit-keyframes timer-low
+{
+0%   {box-shadow: 0 0 0px #FF7A66;}
+25%  {box-shadow: 0 0 .625em #FF7A66, 0 0 .45em #FF7A66;}
+50%  {box-shadow: 0 0 1.6em #FF7A66, 0 0 .45em #FF7A66,0 0 15px #FF7A66, 0 0 2.5em #FF7A66}
+75%  {box-shadow: 0 0 .625em #FF7A66, 0 0 .3125em #FF7A66;}
+100%  {box-shadow: 0 0 .625em #FF7A66;}
+}
+
+
+@-moz-keyframes timer-text-low
+{
+0%   {font-size: 3em}
+30%   {font-size: 3em}
+50%   {font-size: 4em}
+80%   {font-size: 3em}
+100%   {font-size: 3em}
+}
+
+@-webkit-keyframes timer-text-low
+{
+0%   {font-size: 3em}
+30%   {font-size: 3em}
+50%   {font-size: 4em}
+80%   {font-size: 3em}
+100%   {font-size: 3em}
+}
+
+
+@-moz-keyframes timer-midd
+{
+0%   {box-shadow: 0 0 0px #EBC000;}
+25%  {box-shadow: 0 0 .45em #EBC000, 0 0 .3125em #EBC000;}
+50%  {box-shadow: 0 0 1.25em #EBC000, 0 0 .625em #EBC000,0 0 15px #EBC000, 0 0 2.5em #EBC000}
+75%  {box-shadow: 0 0 .625em #EBC000, 0 0 .3125em #EBC000;}
+100%  {box-shadow: 0 0 .45em #EBC000;}
+}
+
+@-webkit-keyframes timer-midd
+{
+0%   {box-shadow: 0 0 0px #EBC000;}
+25%  {box-shadow: 0 0 .45em #EBC000, 0 0 .3125em #EBC000;}
+50%  {box-shadow: 0 0 1.25em #EBC000, 0 0 .625em #EBC000,0 0 15px #EBC000, 0 0 2.5em #EBC000}
+75%  {box-shadow: 0 0 .625em #EBC000, 0 0 .3125em #EBC000;}
+100%  {box-shadow: 0 0 .45em #EBC000;}
+}
+
+@-moz-keyframes timer-planty
+{
+0%   {box-shadow: 0 0 0px #00EB2F;}
+25%  {box-shadow: 0 0 .625em #00EB2F, 0 0 .45em #00EB2F;}
+50%  {box-shadow: 0 0 1.6em #00EB2F, 0 0 .45em #00EB2F,0 0 15px #00EB2F, 0 0 2.5em #00EB2F}
+75%  {box-shadow: 0 0 .625em #00EB2F, 0 0 .3125em #00EB2F;}
+100%  {box-shadow: 0 0 .625em #00EB2F;}
+}
+
+@-webkit-keyframes timer-planty
+{
+0%   {box-shadow: 0 0 0px #00EB2F;}
+25%  {box-shadow: 0 0 .625em #00EB2F, 0 0 .45em #00EB2F;}
+50%  {box-shadow: 0 0 1.6em #00EB2F, 0 0 .45em #00EB2F,0 0 15px #00EB2F, 0 0 2.5em #00EB2F}
+75%  {box-shadow: 0 0 .625em #00EB2F, 0 0 .3125em #00EB2F;}
+100%  {box-shadow: 0 0 .625em #00EB2F;}
 }
