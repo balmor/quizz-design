@@ -14,6 +14,7 @@
     <script src="js/less-1.5.0.min.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
     <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Basic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -51,24 +52,51 @@
                         <ul class="players">
                             <li class="player">
                                 <div class="status">
-                                    <span>WIN</span>
+                                    <div class="checked"><span></span></div>
                                 </div>
                                 <div class="info-player">
-                                    <div class="name">bradley</div>
-                                    <div class="points">10000</div>
+                                    <div class="name">balmor</div>
+                                    <div class="points">11000</div>
                                 </div>
                                 <div class="avatar">
                                     <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=100" alt=""></div>
                                 </div>
                             </li>
                             <li class="player">
-                                
+                                <div class="status selected green correct">
+                                    <div class="checked"><span></span></div>
+                                </div>
+                                <div class="info-player">
+                                    <div class="name">mariusz</div>
+                                    <div class="points">9200</div>
+                                </div>
+                                <div class="avatar">
+                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=100" alt=""></div>
+                                </div>                                
                             </li>
                             <li class="player">
-                                
+                                <div class="status selected blue">
+                                    <div class="checked"><span></span></div>
+                                </div>
+                                <div class="info-player">
+                                    <div class="name">karol</div>
+                                    <div class="points">7000</div>
+                                </div>
+                                <div class="avatar">
+                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('kgorecki@nexway.com') ?>?s=100" alt=""></div>
+                                </div>                                
                             </li>
                             <li class="player">
-                                
+                                <div class="status selected">
+                                    <div class="checked"><span></span></div>
+                                </div>
+                                <div class="info-player">
+                                    <div class="name">michal</div>
+                                    <div class="points">6300</div>
+                                </div>
+                                <div class="avatar">
+                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('chajr@bluetree.pl') ?>?s=100" alt=""></div>
+                                </div>                                
                             </li>
                         </ul>
                     </div>

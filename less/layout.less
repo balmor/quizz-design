@@ -23,7 +23,7 @@ body {
 
             .wrapper-answers {
                 float: left;
-                width: 45%;
+                width: 40%;
                 // background: rgba(255,255,255,.1);
 
                 .answers {
@@ -91,45 +91,149 @@ body {
 
                         &.incorrect {
                             border-color: rgba(255,255,255,.3);
-                            color: rgba(255,255,255,.3);
+                            color: rgba(255,255,255,.4);
                         }
                     }
                 }
             }
 
             .wrapper-players {
+                .clearfix;
                 float: right;
-                width: 40%;
+                width: 55%;
                 // background: rgba(255,255,255,.1);  
 
                 .players {
+                    .clearfix;
                     margin: 0;
                     padding: 30px;
-                    padding-left: 40px;
+                    padding-right: 5%;
+                    float: right;
                     // -webkit-transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
                     // transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
 
                     li.player {
                         display: table;
-                        background: rgba(0,0,0,.4);
+                        // background: rgba(0,0,0,.8);
                         padding: 10px;
-                        margin: 20px;
+                        height: 100px;
+                        .box-sizing(border-box);
+                        overflow: hidden;
 
                         .status, .info-player, .avatar {
                             display: table-cell;
+                            border: 1px solid rgba(0,0,0,0);
+                            vertical-align: middle;
                         }
 
                         .status {
-                            width: 100px;
+                            width: 90px;
 
-                            span {
+                            &.selected {
+                                .checked {
+                                    display: block;
+                                }
+
+                                &.blue {
+                                    .checked {
+                                        border-color: @answer-blue-color;
+                                    }  
+
+                                    &.correct {
+                                        .checked {
+                                            border-color: lighten(@answer-blue-color, 10%);
+                                            box-shadow: 0 0 20px @answer-blue-color;
+                                        }
+                                    }                                                           
+                                }
+
+                                &.orange {
+                                    .checked {
+                                        border-color: @answer-orange-color;
+                                    }
+
+                                    &.correct {
+                                        .checked {
+                                            border-color: lighten(@answer-orange-color, 10%);
+                                            box-shadow: 0 0 20px @answer-orange-color;
+                                        }
+                                    }                                     
+                                }
+
+                                &.green {
+                                    .checked {
+                                        border-color: @answer-green-color;
+                                    }
+
+                                    &.correct {
+                                        .checked {
+                                            border-color: lighten(@answer-green-color, 10%);
+                                            box-shadow: 0 0 20px @answer-green-color;
+
+                                            span:before {
+                                                content: "\f033";
+                                                font-family: FontAwesome;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.yellow {
+                                    .checked {
+                                        border-color: @answer-yellow-color;
+                                    }
+
+                                    &.correct {
+                                        .checked {
+                                            border-color: lighten(@answer-yellow-color, 10%);
+                                            box-shadow: 0 0 20px @answer-yellow-color;
+                                        }
+                                    }                                    
+                                }                            
+                            }
+
+                            .checked {
                                 background: #172435;
-                                #gradient .vertical(#192648, #000D10);                                
-                            }                            
+                                #gradient .vertical(#587092, #14243D);
+                                display: block; 
+                                width: 80px;   
+                                height: 80px;    
+                                line-height: 74px;
+                                border-radius: 3px;
+                                border: 4px solid white;
+                                display: none;
+
+                                span {
+
+                                }
+                            }                          
                         }
 
                         .info-player {
+                            width: 170px;
+                            text-align: center;
+                            padding-right: 10px;
 
+                            .name, .points {
+                                width: 170px;
+                                background: #172435;
+                                #gradient .vertical(#587092, #14243D);                                 
+                                height: 50px;
+                                line-height: 50px;
+                                border-radius: 3px;
+                                padding: 0 5px;
+                                .text-overflow;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .avatar {
+                            .image {
+
+                                img {
+                                    border-radius: 3px;
+                                }
+                            }
                         }
                     }
                 }              

@@ -14,6 +14,7 @@
     <script src="js/less-1.5.0.min.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
     <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Basic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
