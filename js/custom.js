@@ -101,3 +101,11 @@ $(function(){
     }, 1000);
 
 });
+
+$(function(){
+    var $players = $('ul.players li');
+
+    if ($players.length > 4) {
+        $players.addClass('left');
+    };
+});
