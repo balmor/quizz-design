@@ -19,7 +19,7 @@ body {
         min-height: 300px;
 
         .content {
-            padding-top: 20px;
+            .clearfix;
 
             .wrapper-answers {
                 float: left;
@@ -134,6 +134,16 @@ body {
                                     display: block;
                                 }
 
+                                &.correct {
+                                    .checked {
+                                        span:before {
+                                            content: "\f00c";
+                                            font-family: 'FontAwesome';  
+                                            font-size: 2em;                                          
+                                        }
+                                    }
+                                }                                  
+
                                 &.blue {
                                     .checked {
                                         border-color: @answer-blue-color;
@@ -143,6 +153,10 @@ body {
                                         .checked {
                                             border-color: lighten(@answer-blue-color, 10%);
                                             box-shadow: 0 0 20px @answer-blue-color;
+                                        
+                                            span:before {
+                                                color: @answer-blue-color;
+                                            }
                                         }
                                     }                                                           
                                 }
@@ -156,6 +170,10 @@ body {
                                         .checked {
                                             border-color: lighten(@answer-orange-color, 10%);
                                             box-shadow: 0 0 20px @answer-orange-color;
+                                        
+                                            span:before {
+                                                color: @answer-orange-color;
+                                            }
                                         }
                                     }                                     
                                 }
@@ -171,8 +189,7 @@ body {
                                             box-shadow: 0 0 20px @answer-green-color;
 
                                             span:before {
-                                                content: "\f033";
-                                                font-family: FontAwesome;
+                                                color: @answer-green-color;
                                             }
                                         }
                                     }
@@ -187,9 +204,13 @@ body {
                                         .checked {
                                             border-color: lighten(@answer-yellow-color, 10%);
                                             box-shadow: 0 0 20px @answer-yellow-color;
+                                        
+                                            span:before {
+                                                color: @answer-yellow-color;
+                                            }
                                         }
                                     }                                    
-                                }                            
+                                }                          
                             }
 
                             .checked {

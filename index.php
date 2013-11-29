@@ -28,79 +28,89 @@
 </head>
 <body id="game-wrap">
 
-    <div class="container">
-
-        <header>
-                <h1>Quizz Time</h1>
-        </header>
+    <div class="container em-based">
+        <div class="top-navbar">
+            <a href="#" title="Full Screen on/off" id="fullscreen-button"><div class="monitor"><span class="hide">Full Screen on/off</span></div></a>
+        </div>
         <section>
 
-                <div class="wrapper-question">
-                    QUESTION &amp; TIME
+            <div class="question-container">
+                <div class="question">
+                    <span class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, laborum, similique? Reprehenderit, nihil, dolor repellendus aspernatur aperiam dignissimos distinctio explicabo cupiditate atque sunt accusantium cum exercitationem tempore quaerat voluptates commodi.
+                    </span>
                 </div>
+            </div>
 
-                <div class="content">
-                    <div class="wrapper-answers">
-                        <ul class="answers">
-                            <li class="blue incorrect">ANSWER</li>
-                            <li class="orange incorrect">ANSWER</li>
-                            <li class="green correct">ANSWER</li>
-                            <li class="yellow incorrect">ANSWER</li>
-                        </ul>
-                    </div>
-                    <div class="wrapper-players">
-                        <ul class="players">
-                            <li class="player">
-                                <div class="status">
-                                    <div class="checked"><span></span></div>
-                                </div>
-                                <div class="info-player">
-                                    <div class="name">balmor</div>
-                                    <div class="points">11000</div>
-                                </div>
-                                <div class="avatar">
-                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=100" alt=""></div>
-                                </div>
-                            </li>
-                            <li class="player">
-                                <div class="status selected green correct">
-                                    <div class="checked"><span></span></div>
-                                </div>
-                                <div class="info-player">
-                                    <div class="name">mariusz</div>
-                                    <div class="points">9200</div>
-                                </div>
-                                <div class="avatar">
-                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=100" alt=""></div>
-                                </div>                                
-                            </li>
-                            <li class="player">
-                                <div class="status selected blue">
-                                    <div class="checked"><span></span></div>
-                                </div>
-                                <div class="info-player">
-                                    <div class="name">karol</div>
-                                    <div class="points">7000</div>
-                                </div>
-                                <div class="avatar">
-                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('kgorecki@nexway.com') ?>?s=100" alt=""></div>
-                                </div>                                
-                            </li>
-                            <li class="player">
-                                <div class="status selected">
-                                    <div class="checked"><span></span></div>
-                                </div>
-                                <div class="info-player">
-                                    <div class="name">michal</div>
-                                    <div class="points">6300</div>
-                                </div>
-                                <div class="avatar">
-                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('chajr@bluetree.pl') ?>?s=100" alt=""></div>
-                                </div>                                
-                            </li>
-                        </ul>
-                    </div>
+            <div class="timer-container">
+                <div class="time-left"></div>
+            </div>
+
+            <div class="spacer-v-3"></div>
+
+            <div class="content">
+                <div class="wrapper-answers">
+                    <ul class="answers">
+                        <li class="blue incorrect">ANSWER</li>
+                        <li class="orange incorrect">ANSWER</li>
+                        <li class="green correct">ANSWER</li>
+                        <li class="yellow incorrect">ANSWER</li>
+                    </ul>
                 </div>
+                <div class="wrapper-players">
+                    <ul class="players">
+                        <li class="player">
+                            <div class="status">
+                                <div class="checked"><span></span></div>
+                            </div>
+                            <div class="info-player">
+                                <div class="name">balmor</div>
+                                <div class="points">11000</div>
+                            </div>
+                            <div class="avatar">
+                                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=100" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="player">
+                            <div class="status selected green correct">
+                                <div class="checked"><span></span></div>
+                            </div>
+                            <div class="info-player">
+                                <div class="name">mariusz</div>
+                                <div class="points">9200</div>
+                            </div>
+                            <div class="avatar">
+                                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=100" alt=""></div>
+                            </div>                                
+                        </li>
+                        <li class="player">
+                            <div class="status selected blue">
+                                <div class="checked"><span></span></div>
+                            </div>
+                            <div class="info-player">
+                                <div class="name">karol</div>
+                                <div class="points">7000</div>
+                            </div>
+                            <div class="avatar">
+                                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('kgorecki@nexway.com') ?>?s=100" alt=""></div>
+                            </div>                                
+                        </li>
+                        <li class="player">
+                            <div class="status selected">
+                                <div class="checked"><span></span></div>
+                            </div>
+                            <div class="info-player">
+                                <div class="name">michal</div>
+                                <div class="points">6300</div>
+                            </div>
+                            <div class="avatar">
+                                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('chajr@bluetree.pl') ?>?s=100" alt=""></div>
+                            </div>                                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </section>
 
     </div>
