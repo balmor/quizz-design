@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Quizz</title>
+    <title>Quizz Time</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quizz">
     <meta name="author" content="Damian Duda, Karol Górecki, Mariusz Maroń">
@@ -30,7 +30,7 @@
     <div class="container">
 
         <header>
-                <h1>Quizz</h1>
+                <h1>Quizz Time</h1>
         </header>
         <section>
 
@@ -41,10 +41,10 @@
                 <div class="content">
                     <div class="wrapper-answers">
                         <ul class="answers">
-                            <li class="blue ">ANSWER</li>
-                            <li class="orange ">ANSWER</li>
-                            <li class="green ">ANSWER</li>
-                            <li class="yellow">ANSWER</li>
+                            <li class="blue incorrect">ANSWER</li>
+                            <li class="orange incorrect">ANSWER</li>
+                            <li class="green correct">ANSWER</li>
+                            <li class="yellow incorrect">ANSWER</li>
                         </ul>
                     </div>
                     <div class="wrapper-players">
@@ -58,7 +58,7 @@
                                     <div class="score">10000</div>
                                 </div>
                                 <div class="avatar">
-                                    <img src="http://www.gravatar.com/avatar">
+                                    <img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=200" alt="">
                                 </div>
                             </li>
                             <li class="player">
