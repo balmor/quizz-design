@@ -84,7 +84,7 @@
                             </div>                                
                         </li>
                         <li class="player">
-                            <div class="status selected blue">
+                            <div class="status selected blue incorrect">
                                 <div class="checked"><span></span></div>
                             </div>
                             <div class="info-player">
@@ -110,7 +110,7 @@
                     </ul>
                 </div>
             </div>
-            
+
         </section>
 
     </div>
@@ -119,7 +119,7 @@
     <script src="//code.jquery.com/ui/1.9.0/jquery-ui.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
 
-
+    <script src="js/custom.js" type="text/javascript"></script>
 
 </body>
 </html>
