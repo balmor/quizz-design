@@ -132,21 +132,33 @@ body {
                             &.selected {
                                 .checked {
                                     display: block;
-                                }
+                                }   
+
+                                &.blue, &.orange, &.green, &.yellow {
+                                    .checked {
+                                        span:before {
+                                            content: "\f00d";
+                                            font-family: 'FontAwesome'; 
+                                            color: #CC0033;
+                                            font-size: 3.5em; 
+                                        }                                        
+                                    }
+                                } 
 
                                 &.correct {
                                     .checked {
                                         span:before {
                                             content: "\f00c";
                                             font-family: 'FontAwesome';  
-                                            font-size: 2em;                                          
+                                            font-size: 3.5em;                                          
                                         }
                                     }
-                                }                                  
+                                }                                                        
 
                                 &.blue {
                                     .checked {
                                         border-color: @answer-blue-color;
+                                        box-shadow: 0 0 5px #000, inset 0 1px 1px rgba(0,0,0,.5);
                                     }  
 
                                     &.correct {
@@ -155,7 +167,8 @@ body {
                                             box-shadow: 0 0 20px @answer-blue-color;
                                         
                                             span:before {
-                                                color: @answer-blue-color;
+                                                color: lighten(@answer-yellow-color, 5%);
+                                                text-shadow: 0 0 10px @answer-blue-color;
                                             }
                                         }
                                     }                                                           
@@ -164,6 +177,7 @@ body {
                                 &.orange {
                                     .checked {
                                         border-color: @answer-orange-color;
+                                        box-shadow: 0 0 5px #000;
                                     }
 
                                     &.correct {
@@ -172,7 +186,8 @@ body {
                                             box-shadow: 0 0 20px @answer-orange-color;
                                         
                                             span:before {
-                                                color: @answer-orange-color;
+                                                color: lighten(@answer-yellow-color, 5%);
+                                                text-shadow: 0 0 10px @answer-orange-color;
                                             }
                                         }
                                     }                                     
@@ -181,6 +196,7 @@ body {
                                 &.green {
                                     .checked {
                                         border-color: @answer-green-color;
+                                        box-shadow: 0 0 5px #000;
                                     }
 
                                     &.correct {
@@ -189,7 +205,8 @@ body {
                                             box-shadow: 0 0 20px @answer-green-color;
 
                                             span:before {
-                                                color: @answer-green-color;
+                                                color: lighten(@answer-green-color, 5%);
+                                                text-shadow: 0 0 10px @answer-green-color;
                                             }
                                         }
                                     }
@@ -198,6 +215,7 @@ body {
                                 &.yellow {
                                     .checked {
                                         border-color: @answer-yellow-color;
+                                        box-shadow: 0 0 5px #000;
                                     }
 
                                     &.correct {
@@ -206,7 +224,8 @@ body {
                                             box-shadow: 0 0 20px @answer-yellow-color;
                                         
                                             span:before {
-                                                color: @answer-yellow-color;
+                                                color: lighten(@answer-yellow-color, 5%);
+                                                text-shadow: 0 0 10px @answer-yellow-color;
                                             }
                                         }
                                     }                                    
