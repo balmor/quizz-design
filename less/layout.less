@@ -30,7 +30,6 @@ body {
                     margin: 0;
                     padding: 30px;
                     padding-left: 40px;
-                    color: #fff;
                     -webkit-transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
                     transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
 
@@ -45,33 +44,99 @@ body {
 
                         &.blue {
                             // background: blue;
-                            border-color: #4F64E4;
+                            border-color: @answer-blue-color;
                             margin: 0;
+
+                            &.correct {
+                                box-shadow: 0 0 25px @answer-blue-color;
+                                border-color: lighten(@answer-blue-color, 10%);
+                            }
                         }
 
                         &.orange {
                             // background: orange;
-                            border-color: #edaf3d;
+                            border-color: @answer-orange-color;
+
+                            &.correct {
+                                box-shadow: 0 0 25px @answer-orange-color;
+                                border-color: lighten(@answer-orange-color, 10%);
+                            }                            
                         }
 
                         &.green {
                             // background: green;
-                            border-color: #49DF3F;
+                            border-color: @answer-green-color;
+
+                            &.correct {
+                                box-shadow: 0 0 25px @answer-green-color;
+                                border-color: lighten(@answer-green-color, 10%);
+                            }                            
                         }
 
                         &.yellow {
                             // background: yellow;
-                            border-color: #F6F84D;
-                        }                                                            
+                            border-color: @answer-yellow-color;
 
+                            &.correct {
+                                box-shadow: 0 0 25px @answer-yellow-color;
+                                border-color: lighten(@answer-yellow-color, 10%);
+                            }                            
+                        }
+
+                        &.correct {
+                            border-width: 4px;
+                            text-shadow: 0 0 3px black;
+                        }
+
+                        &.incorrect {
+                            border-color: rgba(255,255,255,.3);
+                            color: rgba(255,255,255,.3);
+                        }
                     }
                 }
             }
 
-            .wrapper-users {
+            .wrapper-players {
                 float: right;
                 width: 40%;
-                background: rgba(255,255,255,.1);                
+                background: rgba(255,255,255,.1);  
+
+                .players {
+                    margin: 0;
+                    padding: 30px;
+                    padding-left: 40px;
+                    // -webkit-transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
+                    // transform: perspective(20em) rotateX(0deg) rotateY(2deg) rotateZ(0deg);
+
+                    li.player {
+                        text-align: right;
+                        overflow: hidden;
+
+                        .status, .info-player, .avatar {
+                            display: inline-block;
+                            height: 80px;
+                            margin-left: 5px;
+                        }
+
+                        .status {
+                            background: rgba(0,0,0,.5);
+                            line-height: 80px;
+                            width: 80px;
+                        }
+
+                        .info-player {
+                            background: rgba(0,0,0,.5);
+                            width: 200px;
+
+                            .name, .score{
+                                line-height: 40px;
+                                text-align: center;
+                            }
+                        }
+
+
+                    }
+                }              
             }
         }
     }
