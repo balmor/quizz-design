@@ -47,6 +47,7 @@ browserPrefixes = 'webkit moz o ms khtml'.split(' ');
      return (this.prefix === '') ? el.requestFullScreen() : el[this.prefix + 'RequestFullScreen']();
      }
      fullScreenApi.cancelFullScreen = function(el) {
+
      return (this.prefix === '') ? document.cancelFullScreen() : document[this.prefix + 'CancelFullScreen']();
      }
     }
@@ -72,10 +73,10 @@ if (fullScreenApi.supportsFullScreen) {
 fsButton.addEventListener('click', function() {
 
     if(window.fullScreenApi.isFullScreen()) {
-        $(fsButton).removeClass('on');
+        // $(fsButton).removeClass('on');
         window.fullScreenApi.cancelFullScreen(fsElement);
     } else {
-        $(fsButton).addClass('on');
+        // $(fsButton).addClass('on');
         window.fullScreenApi.requestFullScreen(fsElement);
     }
 }, true);

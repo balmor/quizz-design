@@ -118,7 +118,6 @@
     <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="//code.jquery.com/ui/1.9.0/jquery-ui.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
-
     <script src="js/custom.js" type="text/javascript"></script>
 
 </body>
