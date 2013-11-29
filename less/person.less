@@ -1,0 +1,82 @@
+/*
+ * @author Mariusz Maroń <mmaron@nexway.com>
+ */
+
+// LAYOUT
+
+body {
+    section {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        // Flexbox
+        -moz-display: flex;
+        -moz-flex-direction: column;
+        -moz-flex-wrap: wrap;
+        -webkit-display: flex;
+        -webkit-flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        .person {
+            background: rgba(0,0,0,.4);
+            padding: 10px;
+            .box-shadow(0 0 10px 0 rgba(36, 83, 175, .9));
+            display: inline-block;
+            margin: 20px;
+            // Flexbox
+            // -moz-flex: 220px 1;
+            // -webkit-flex: 220px 1;
+            .image {
+                text-align: center;
+                img {
+                    float: left;
+                }
+            }
+            .total-points {
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+            }
+            .answers {
+                text-align: center;
+                .good, .bad {
+                }
+                .good {
+                    color: #6EAD3E;
+                    &:before {
+                        content: "Good: ";
+                    }
+                }
+                .bad {
+                    color: #A52D2B;
+                    &:before {
+                        content: "Bad: ";
+                    }
+                }
+            }
+            &.normal {
+                .square(220px);
+                .image {
+                    .square(200px);
+                }
+            }
+            &.small {
+                .square(120px);
+                .image {
+                    .square(100px);
+                    background-size: 70px 70px !important;
+                }
+            }
+            &.mini {
+                
+            }
+            &.empty {
+                .image {
+                    background: url(../img/question-mark-icon.png) center center no-repeat;
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

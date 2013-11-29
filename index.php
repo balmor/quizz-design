@@ -55,10 +55,10 @@
                                 </div>
                                 <div class="info-player">
                                     <div class="name">bradley</div>
-                                    <div class="score">10000</div>
+                                    <div class="points">10000</div>
                                 </div>
                                 <div class="avatar">
-                                    <img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=200" alt="">
+                                    <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=100" alt=""></div>
                                 </div>
                             </li>
                             <li class="player">
