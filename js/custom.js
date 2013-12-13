@@ -118,3 +118,11 @@ $(function(){
         $players.addClass('left');
     };
 });
+
+jQuery(function($) {
+// changed .hover to .each
+  $('.photo').each(function() {
+    var a = Math.random() < 0.5 ? Math.random()*-10000 : Math.random()*10000;             
+    $(this).css('transform', 'rotate(' + a + 'deg)');    
+  });
+});

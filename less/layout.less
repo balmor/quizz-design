@@ -79,6 +79,11 @@ body {
                             border-width: 0.3em;
                             text-shadow: 0 0 0.1em black;
                             #gradient .vertical(lighten(#192648, 20%), lighten(#000D10, 10%));
+                            -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
+                            -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
+                            -ms-animation: 1600ms pulsate infinite alternate ease-in-out;
+                            -o-animation: 1600ms pulsate infinite alternate ease-in-out;
+                            animation: 1600ms pulsate infinite alternate ease-in-out;
                         }
 
                         &.incorrect {
@@ -142,6 +147,12 @@ body {
 
                                 &.correct {
                                     .checked {
+                                        -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
+                                        -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
+                                        -ms-animation: 1600ms pulsate infinite alternate ease-in-out;
+                                        -o-animation: 1600ms pulsate infinite alternate ease-in-out;
+                                        animation: 1600ms pulsate infinite alternate ease-in-out;
+
                                         span:before {
                                             content: "\f00c";
                                             font-family: 'FontAwesome';  
