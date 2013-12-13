@@ -35,7 +35,7 @@
         <section>
 
                 <div class="wrapper-question">
-                    SELECT YOURSELF
+                    SELECT CATEGORY
                 </div>
 
                 <div class="content">
@@ -76,7 +76,16 @@
 
     <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="//code.jquery.com/ui/1.9.0/jquery-ui.js" type="text/javascript"></script>
-
+    <script>
+    $(document).ready(function() {
+        $('.category').on('click', function(e){
+            e.preventDefault();
+            $(this)
+                .find('.level1')
+                .toggleClass('show');
+        });
+    });
+    </script>
 
 
 </body>
