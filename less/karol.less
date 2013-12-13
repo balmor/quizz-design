@@ -4,7 +4,7 @@
 
 
 // @grid-size: 19.99px; //16px
-@grid-size: 18px;
+@grid-size: 16px;
 
 // LAYOUT
 body {
@@ -111,8 +111,12 @@ body {
                 border-radius: 50%;
 
                 margin-left: -8em;
+                margin-left: -128em;
+                transition: all 1s;
 
                 &.planty {
+                transition: all 1s;
+                    margin-left: -8em;
                     -webkit-animation: 4s timer-planty infinite alternate ease-in-out;
                     -moz-animation: 4s timer-planty infinite alternate ease-in-out;
                     -ms-animation: 4s timer-planty infinite alternate ease-in-out;
@@ -122,6 +126,8 @@ body {
                 }
 
                 &.midd {
+                transition: all 1s;
+                    margin-left: -8em;
                     -webkit-animation: 2s timer-midd infinite alternate ease-in-out;
                     -moz-animation: 2s timer-midd infinite alternate ease-in-out;
                     -ms-animation: 2s timer-midd infinite alternate ease-in-out;
@@ -131,6 +137,8 @@ body {
                 }
 
                 &.low {
+                transition: all 1s;
+                    margin-left: -8em;
                     -webkit-animation: 1s timer-low infinite alternate ease-in-out;
                     -moz-animation: 1s timer-low infinite alternate ease-in-out;
                     -ms-animation: 1s timer-low infinite alternate ease-in-out;
