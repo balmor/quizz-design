@@ -47,6 +47,10 @@
                 <span>z</span>
 
             </div>
+            <div class="spacer-v-3"></div>
+            <div class="spacer-v-3"></div>
+            <div class="spacer-v-3"></div>
+            <h3>press a key</h3>
         </section>
 
     </div>
