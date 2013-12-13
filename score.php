@@ -39,7 +39,7 @@
         </div>
         <section>
 
-        <h2 class="complate">QUIZZ COMPLATE! <span class="try">Try again</span></h2>
+        <h2 class="complate">QUIZZ COMPLETE! <span class="try">Try again</span></h2>
 
         <table class="table table-bordered score">
             <tr class="player first">
