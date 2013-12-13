@@ -118,3 +118,4 @@ $(function(){
         $players.addClass('left');
     };
 });
+

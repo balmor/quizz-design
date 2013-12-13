@@ -9,7 +9,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet/less" type="text/css" href="less/main.less">
-
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <script>less = {}; less.env = 'development';</script>
     <script src="js/less-1.5.0.min.js" type="text/javascript"></script>
 
@@ -33,9 +33,20 @@
             <a href="#" title="Full Screen on/off" id="fullscreen-button"><div class="monitor"><span class="hide">Full Screen on/off</span></div></a>
         </div>
         <section class="intro">
+            <div class="intro-text">
+                <span>N</span>
+                <span>e</span>
+                <span>x</span>
+                <span>w</span>
+                <span>a</span>
+                <span>y</span>
+                <span>&nbsp;</span>
+                <span>Q</span>
+                <span>u</span>
+                <span>i</span>
+                <span>z</span>
 
-            
-
+            </div>
         </section>
 
     </div>
@@ -51,6 +62,29 @@
     <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="//code.jquery.com/ui/1.9.0/jquery-ui.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
+
+    <script>
+        // =================================================================
+        //     Nexway Lab anim
+        // =================================================================
+
+        $(function(){
+            console.log("xxx");
+                
+                setTimeout(function(){
+                    $(".intro-text span").each(function(i,e){
+
+                        var timeout = i * 300;
+                        $(e).css({
+                            "-moz-animation-delay": timeout+"ms",
+                            "-webkit-animation-delay": timeout+"ms",
+                        }).addClass("up");
+                    });
+                }, 1000);
+            
+        });
+
+    </script>
 
 
 </body>
