@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Quizz Time</title>
+    <title>Nexway Quizz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quizz">
+    <meta name="description" content="Nexway Quizz">
     <meta name="author" content="Damian Duda, Karol Górecki, Mariusz Maroń">
 
     <!-- Styles -->
