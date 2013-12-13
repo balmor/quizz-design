@@ -1,0 +1,41 @@
+/*
+ * @author Mariusz Maroń <mmaron@nexway.com>
+ */
+
+// LAYOUT
+
+body {
+    section {
+        .category-selector {
+            width: 600px;
+            margin: 0 auto;
+            &.level0 {
+                .category {
+                    #gradient .vertical(#192648, #172435);
+                    .box-shadow(0 0 .62em 0 rgba(36, 83, 175, .9));
+                    display: block;
+                    margin: 5px 0px;
+                    border-radius: .18em;
+                    border: 3px solid white;
+                    box-shadow: -10px -10px 10px rgba(0,0,0,.4);    
+                    border-radius: 3px;
+                    a {
+                        padding: 20px 30px;
+                        display: block;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    ul.level1 {
+                        display: none;
+                        .subcategory {
+                            a {
+        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

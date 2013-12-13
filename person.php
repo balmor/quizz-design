@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Quizz</title>
+    <title>Quizz Time</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quizz">
     <meta name="author" content="Damian Duda, Karol Górecki, Mariusz Maroń">
@@ -27,153 +27,54 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <body id="game-wrap">
+
     <div class="container">
+
         <header>
-                <h1>Quizz</h1>
+                <h1>Quizz Time</h1>
         </header>
         <section>
-            <div class="person normal active">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=200" alt=""></div>
-            </div>
-            <div class="person normal chosen">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=200" alt=""></div>
-            </div>
-             <div class="person normal">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=200" alt=""></div>
-            </div>
-             <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
-            <div class="person normal empty">
-                <div class="image"></div>
-            </div>
+
+                <div class="wrapper-question">
+                    SELECT YOURSELF
+                </div>
+
+                <div class="content">
+                    <div class="choose-player">
+                        <div data-number="" class="person normal active">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal chosen">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=200" alt=""></div>
+                        </div>
+                         <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=200" alt=""></div>
+                        </div>
+                         <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('robakking@gmail.com') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('alpherz@gmail.com') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('chajr@bluetree.pl') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('mtasak@o2.pl') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dawidpiotrowski@o2.pl') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('llach@nexway.com') ?>?s=200" alt=""></div>
+                        </div>
+                        <div data-number="" class="person normal">
+                            <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('gpawlik@nexway.com') ?>?s=200" alt=""></div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
-        <section>
-            <div class="person small">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=100" alt=""></div>
-            </div>
-            <div class="person small">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=100" alt=""></div>
-            </div>
-             <div class="person small">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=100" alt=""></div>
-            </div>
-             <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-            <div class="person small empty">
-                <div class="image"></div>
-            </div>
-        </section>
-
-        <section>
-            <div class="person mini">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('maronmariusz@gmail.com') ?>?s=40" alt=""></div>
-            </div>
-            <div class="person mini">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('karol.gorecki@o2.pl') ?>?s=40" alt=""></div>
-            </div>
-             <div class="person mini">
-                <div class="image"><img src="http://www.gravatar.com/avatar/<?php echo md5('dduda@nexway.com') ?>?s=40" alt=""></div>
-            </div>
-             <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-            <div class="person mini empty">
-                <div class="image"></div>
-            </div>
-        </section>
     </div>
 
     <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
