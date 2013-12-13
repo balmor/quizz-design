@@ -119,6 +119,7 @@ $(function(){
     };
 });
 
+
 jQuery(function($) {
 // changed .hover to .each
   $('.photo').each(function() {
@@ -126,3 +127,4 @@ jQuery(function($) {
     $(this).css('transform', 'rotate(' + a + 'deg)');    
   });
 });
+
