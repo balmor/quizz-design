@@ -1,0 +1,74 @@
+/*
+ * @author Damian Duda <dduda@nexway.com>
+ */
+
+// LAYOUT
+body {
+    min-width: 100%;
+
+    section {
+        min-height: 30em;
+
+        h1.complate {
+            line-height: 120px;
+        }
+
+        .score {
+            .player {
+                display: inline-block;
+
+                .avatar {
+                    .image {
+                        img {
+                            border-radius: 0.3em;
+                            border: 0.3em solid #203656;
+                            border-bottom-right-radius: 0; 
+                            border-bottom-left-radius: 0; 
+                        }
+                    } 
+                }
+                .info-player {
+                    .name, .points {
+                        // width: 10em;
+                        background: #172435;
+                        #gradient .vertical(#587092, #14243D);                                 
+                        height: 3em;
+                        line-height: 3em;
+                        border: 0.3em solid #203656;
+                        padding: 0 0.4em;
+                        .text-overflow;
+                        text-transform: uppercase;                        
+                    }
+                }
+
+                .status {
+                    border: 0.3em solid #203656;  
+                    border-top-right-radius: 0; 
+                    border-top-left-radius: 0;
+                    padding-top: 1.5em;
+                    padding-bottom: 1.5em;                 
+
+                    .result {
+                        margin: 0 auto;
+                        text-align: center;
+                        .square(3em);
+                        line-height: 3em;
+                        border-radius: 50%;
+                        #gradient .vertical(#C9B749, darken(#C9B749, 15%));
+
+                        span {
+                            // display: inline-block;
+                            vertical-align: top;
+                            font-size: 1.7em;
+                            em {
+                                vertical-align:super;
+                                font-size: 1em;
+                                font-style: normal;
+                            }
+                        }  
+                    }               
+                }
+            }
+        }
+    }
+}
